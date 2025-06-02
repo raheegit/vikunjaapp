@@ -49,7 +49,7 @@ The deployment uses a Helm umbrella chart named vikunjaapp/ which aggregates mul
   * Replica counts
   * Resource requests and limits
   * Storage sizes
-
+<mxGraphModel><root><mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="2" value="Replicas" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1"><mxGeometry x="190" y="511" width="60" height="30" as="geometry"/></mxCell></root></mxGraphModel>
 # Detailed Deployment Resources:
 
 * Deployment Guide - https://github.com/raheegit/vikunjaapp/wiki
