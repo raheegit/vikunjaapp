@@ -46,9 +46,9 @@ The deployment uses a Helm umbrella chart named vikunjaapp/ which aggregates mul
 
 * values.yaml in the umbrella chart defines global settings and overrides for subcharts
 * Allows dynamic configuration of:
-* Replica counts
-* Resource requests and limits
-* Storage sizes
+  * Replica counts
+  * Resource requests and limits
+  * Storage sizes
 
 # Detailed Deployment Resources:
 
