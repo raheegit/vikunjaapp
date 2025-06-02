@@ -4,18 +4,12 @@ Vikunja is an self-hostable to-do list and task management application designed 
 
 # Technical Stack
 
-First bullet point
-Vikunja Monolith (vikunja/vikunja)
+1. Vikunja Monolith (vikunja/vikunja)
 A single Docker container that includes:
+* Backend API (Golang)
+* Frontend Web UI (Vue.js)
+* Background Worker for recurring jobs and task reminders
 
-Backend API (Golang)
-
-Frontend Web UI (Vue.js)
-
-Background Worker for recurring jobs and task reminders
-
-PostgreSQL Database
-
-Official PostgreSQL Helm chart
-
+2. PostgreSQL Database
+Official PostgreSQL Service
 Stores all persistent Vikunja data (users, tasks, lists, reminders, etc.)
