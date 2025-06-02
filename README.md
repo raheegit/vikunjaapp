@@ -24,9 +24,15 @@ Stores all persistent Vikunja data (users, tasks, lists, reminders, etc.)
 1. vikunja/: Deploys the monolithic Vikunja container
 2. postgresql/: Deploys PostgreSQL with PVC and resource limits
 
-*Services:
+* Services:
 1. PostgreSQL: ClusterIP (internal communication)
 2. Vikunja: NodePort (exposed for ingress)
 
 * Ingress:
 1. Routes HTTP traffic to the Vikunja web interface via domain like vikunja.local
+
+# Deployment Templating Strategy Using Helm
+The deployment uses a Helm umbrella chart named vikunjaapp/ which aggregates multiple subcharts:
+* Subcharts:
+ 1. vikunja/ — for the main application
+ 2. postgresql/ — for the database
