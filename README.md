@@ -1,6 +1,6 @@
 # ToDo App Deployment (Vikunja) on Minikube
 
-Vikunja is an self-hostable to-do list and task management application designed for privacy and control by being deployable on your own infrastructure.
+Vikunja is an open-source, self-hosted ToDo app that helps you stay organized with powerful task management features like hierarchical projects, team collaboration, and multiple views including Kanban, Gantt, and table layouts.
 
 # Technical Stack
 
