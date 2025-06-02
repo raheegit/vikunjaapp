@@ -11,3 +11,5 @@ vikunjaapp/
 │       └── templates/
 ├── Chart.yaml
 └── values.yaml
+
+
