@@ -50,3 +50,11 @@ The deployment uses a Helm umbrella chart named vikunjaapp/ which aggregates mul
 * Resource requests and limits
 * Storage sizes
 
+# Detailed Deployment Steps and Resources:
+
+* Deployment Guide - https://github.com/raheegit/vikunjaapp/wiki
+* Minikube - https://minikube.sigs.k8s.io/docs/start/
+* Helm - https://helm.sh/docs/intro/install/
+* Vikunja - https://vikunja.io
+* Ingress on Minikube - https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
+* Ingress Issue - https://stackoverflow.com/questions/70366074/ingress-not-working-from-official-kubernetes-tutorial/70382920#70382920
