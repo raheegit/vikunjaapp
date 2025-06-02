@@ -14,18 +14,21 @@ A single Docker container that includes:
 Official PostgreSQL Service
 Stores all persistent Vikunja data (users, tasks, lists, reminders, etc.)
 
-# Kubernetes Resources
+ # Kubernetes Minikube Setup and Resources
+ 
+* Minikube (local single-node Kubernetes cluster)
+ -Used for local development and testing
+ -Provides services like kubectl, ingress controller, persistent volumes
 
-To deploy and manage this application effectively, we leverage Kubernetes and a variety of its resources:
+* Kubernetes Resources
+-vikunja/: Deploys the monolithic Vikunja container
+-postgresql/: Deploys PostgreSQL with PVC and resource limits
 
-* Namespace: Kubernetes namespaces are utilized to create isolated environments for different components of the application, ensuring separation and organization.
+*Services:
 
-* Secret: Kubernetes secrets store sensitive information, such as API keys or credentials, required by the application securely.
+- PostgreSQL: ClusterIP (internal communication)
+- Vikunja: NodePort (exposed for ingress)
 
-* Deployment: Kubernetes deployments define how many instances of the application should run and provide instructions for updates and scaling.
+* Ingress:
 
-* Service: Kubernetes services ensure that users can access the application by directing incoming traffic to the appropriate instances.
-
-* StatefulSet: For components requiring statefulness, such as the MongoDB replica set, Kubernetes StatefulSets are employed to maintain order and unique identities.
-
-* PersistentVolume and PersistentVolumeClaim: These Kubernetes resources manage the storage required for the application, ensuring data persistence and scalability.
+- Routes HTTP traffic to the Vikunja web interface via domain like vikunja.local
