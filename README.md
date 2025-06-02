@@ -50,7 +50,7 @@ The deployment uses a Helm umbrella chart named vikunjaapp/ which aggregates mul
 * Resource requests and limits
 * Storage sizes
 
-# Detailed Deployment Steps and Resources:
+# Detailed Deployment Resources:
 
 * Deployment Guide - https://github.com/raheegit/vikunjaapp/wiki
 * Minikube - https://minikube.sigs.k8s.io/docs/start/
