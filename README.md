@@ -16,20 +16,20 @@ Stores all persistent Vikunja data (users, tasks, lists, reminders, etc.)
 
  # Kubernetes Minikube Setup and Resources
  
-## * Minikube (local single-node Kubernetes cluster)
-1. Used for local development and testing
-2. Provides services like kubectl, ingress controller, persistent volumes
+##  Minikube (local single-node Kubernetes cluster)
+* Used for local development and testing
+* Provides services like kubectl, ingress controller, persistent volumes
 
-## * Kubernetes Resources
-1. vikunja/: Deploys the monolithic Vikunja container
-2. postgresql/: Deploys PostgreSQL with PVC and resource limits
+##  Kubernetes Resources
+* vikunja/: Deploys the monolithic Vikunja container
+* postgresql/: Deploys PostgreSQL with PVC and resource limits
 
-## * Services:
-1. PostgreSQL: ClusterIP (internal communication)
-2. Vikunja: NodePort (exposed for ingress)
+##  Services:
+* PostgreSQL: ClusterIP (internal communication)
+* Vikunja: NodePort (exposed for ingress)
 
 ## * Ingress:
-1. Routes HTTP traffic to the Vikunja web interface via domain like vikunja.local
+* Routes HTTP traffic to the Vikunja web interface via domain like vikunja.local
 
 # Deployment Templating Strategy Using Helm
 The deployment uses a Helm umbrella chart named vikunjaapp/ which aggregates multiple subcharts:
