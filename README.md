@@ -12,7 +12,7 @@ A single Docker container that includes:
 
 2. PostgreSQL Database
 Official PostgreSQL Service
-Stores all persistent Vikunja data (users, tasks, lists, reminders, etc.)
+* Stores all persistent Vikunja data (users, tasks, lists, reminders, etc.)
 
  # Kubernetes Minikube Setup and Resources
  
