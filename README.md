@@ -33,6 +33,20 @@ Stores all persistent Vikunja data (users, tasks, lists, reminders, etc.)
 
 # Deployment Templating Strategy Using Helm
 The deployment uses a Helm umbrella chart named vikunjaapp/ which aggregates multiple subcharts:
-* Subcharts:
- 1. vikunja/ — for the main application
- 2. postgresql/ — for the database
+## Subcharts:
+ * vikunja/ — for the main application
+ * postgresql/ — for the database
+
+## Templates:
+
+* Each chart contains reusable Kubernetes manifest templates (Deployments, Services, PVCs, Ingress)
+* Templates use Helm Go templating syntax to allow customization via values.yaml
+
+## Values Management:
+
+* values.yaml in the umbrella chart defines global settings and overrides for subcharts
+* Allows dynamic configuration of:
+* Replica counts
+* Resource requests and limits
+* Storage sizes
+
