@@ -1,0 +1,9 @@
+dependencies:
+- name: postgresql
+  repository: file://charts/postgresql
+  version: 0.1.0
+- name: vikunja
+  repository: file://charts/vikunja
+  version: 0.1.0
+digest: sha256:3670db2a492d19fb2426e47840188fe279b703ad592ae969e4754ab2353e2f30
+generated: "2025-06-02T16:19:43.6332449+05:30"

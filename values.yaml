@@ -1,0 +1,23 @@
+postgresql:
+  replicaCount: 2
+  resources:
+    requests:
+      memory: "256Mi"
+      cpu: "250m"
+    limits:
+      memory: "512Mi"
+      cpu: "500m"
+  storage:
+    size: 1Gi
+
+vikunja:
+  ingress:
+    enabled: true
+    host: vikunja.local
+  resources:
+    limits:
+      memory: 512Mi
+      cpu: 500m
+    requests:
+      memory: 256Mi
+      cpu: 250m

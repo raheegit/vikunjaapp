@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: vikunja
+  labels:
+    app: vikunja
+spec:
+  type: NodePort
+  ports:
+  - port: 3456        # service port
+    targetPort: 3456  # container port
+    nodePort: 31000   # optional, pick a port between 30000-32767, or omit to auto-assign
+  selector:
+    app: vikunja
